@@ -12,8 +12,8 @@ int main()
 	cout << "x = "; cin >> x;
 	cout << "y = "; cin >> y;
 	// розгалуження в повній формі
-	if ((y <= (x - 2) * (x - 2) - 3 && y >= x) ||
-		(y <= (x - 2) * (x - 2) - 3 && y >= -x && y <= 0))
+	if ((y >= (x - 2) * (x - 2) - 3 && y <= x && y >= 0) ||
+		(y >= (x - 2) * (x - 2) - 3 && y <= -x && y < 0))
 		cout << "yes" << endl;
 	else
 		cout << "no" << endl;
